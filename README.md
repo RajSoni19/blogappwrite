@@ -1,16 +1,44 @@
-# React + Vite
+# 📝 MegaBlog - Full Stack Blogging Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Appwrite](https://img.shields.io/badge/Appwrite-FD366E?style=for-the-badge&logo=appwrite&logoColor=white)
+![Redux](https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
-Currently, two official plugins are available:
+A production-grade blogging platform built with React and Appwrite. This application features a rich text editor, real-time slug generation, and a fully functional authentication system using Redux for state management.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## ✨ Key Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+-   **Authentication:** Secure Login/Signup flow using Appwrite Auth.
+-   **Real-time Editor:** Integrated **TinyMCE** for rich text editing (bold, italics, lists, images).
+-   **Image Uploads:** Drag-and-drop support for featured images using Appwrite Buckets.
+-   **Dynamic Routing:** SEO-friendly URLs with auto-generated slugs.
+-   **Protected Routes:** `AuthLayout` wrapper ensures only logged-in users can add/edit posts.
+-   **State Management:** Centralized user status and post data using **Redux Toolkit**.
+-   **Performance:** Optimized with React Hook Form for handling complex form inputs without unnecessary re-renders.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+
+-   **Frontend:** React.js (Vite), Tailwind CSS
+-   **Backend:** Appwrite (Backend-as-a-Service)
+-   **State Management:** Redux Toolkit
+-   **Forms:** React Hook Form
+-   **Editor:** TinyMCE
+-   **Routing:** React Router DOM (v6) with `createBrowserRouter`
+
+---
+
+## ⚙️ Environment Variables
+
+To run this project locally, you need to add the following environment variables to your `.env` file in the root directory.
+
+```bash
+VITE_APPWRITE_URL=""
+VITE_APPWRITE_PROJECT_ID=""
+VITE_APPWRITE_DATABASE_ID=""
+VITE_APPWRITE_COLLECTION_ID=""
+VITE_APPWRITE_BUCKET_ID=""
